@@ -7,3 +7,8 @@ resource "aws_vpc" "vpc" {
     name = "${var.env}-vpc"
   }
 }
+
+# Private route table
+resource "aws_route_table" "private_route_table" {
+  vpc_id = "${aws_vpc.vpc.id}"
+}
