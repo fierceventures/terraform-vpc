@@ -1,3 +1,3 @@
-variable "env" {
-  description = "The environment"
-}
+variable "env" {}
+
+variable "cidr_block" {}
